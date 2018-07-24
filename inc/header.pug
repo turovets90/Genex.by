@@ -1,0 +1,89 @@
+-var main_menu =['Главная ','О компании','Пассажирские перевозки','Грузовые перевозки','Таможенное оформление','Контакты'];
+
+header
+    .container
+        .row.h_row_1
+            .col-6.col-sm-6.col-md-6.col-xl-7
+                .h_row_1_flex1
+                    .logo_mobile
+                        a(href="#")
+                            img(src="img/logo.png")
+                    .lang_block
+                        .lang.lang_active.ru(id="lang_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") RU
+                            i(style="background-image:url(img/russia.png)")
+                        .dropdown-menu(aria-labelledby="lang_dropdown")
+                            ul.lang_menu
+                                li.lang
+                                    a RU
+                                        i(style="background-image:url(img/russia.png)")
+                                li.lang
+                                    a RU
+                                        i(style="background-image:url(img/russia.png)")
+                    .location_block
+                        button.location_btn.desktop_noclick(id="location_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                        .dropdown-menu.desktop_relative(aria-labelledby="location_dropdown")
+                            p.location 220054 Национальный аэропорт Минск, г. Минск, Республика Беларусь
+
+
+            .col-6.col-sm-6.col-md-6.col-xl-5
+                .h_row_1_flex2
+                    .mail_block
+                        button.mail_btn.desktop_noclick(id="mail_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                        .dropdown-menu.desktop_relative(aria-labelledby="mail_dropdown")
+                            a.mail(href="mailto:info@genex.by") info@genex.by
+                    .contacts_block
+                        button.phone_btn.desktop_noclick(id="phones_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                        .dropdown-menu.desktop_relative(aria-labelledby="phones_dropdown")
+                            ul.contacts_list
+                                li
+                                    a.tel(href="mailto:+375 172 35 45 01") +375 172 35 45 01
+                                li
+                                    a.tel(href="mailto:+375 172 35 45 02") +375 172 35 45 02
+                    .mobile_btn_block
+                        .mobile_btn
+                            button.hamburger
+                                span
+                                span
+                                span
+
+
+    nav
+        .container
+            .row
+                .col-12.col-sm-12.col-md-2.col-xl-2
+                    .logo_desktop
+                        a(href="#")
+                            img(src="img/logo.png")
+                .col-12.col-sm-12.col-md-10.col-xl-10
+                    .main_menu
+                        ul.nav
+                            for menu_item,index in main_menu
+                                if index == 0
+                                    li.active
+                                        a(href="" + menu_item + '.html')=menu_item
+                                else if index == 5
+                                    li.contact_link
+                                        a(href="" + menu_item + '.html')=menu_item
+                                else
+                                    li
+                                        a(href="" + menu_item + '.html')=menu_item
+                        .lang_block
+                            .lang.lang_active.ru(id="lang_dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") RU
+                                i(style="background-image:url(img/russia.png)")
+                            .dropdown-menu(aria-labelledby="lang_dropdown1")
+                                ul.lang_menu
+                                    li.lang
+                                        a RU
+                                            i(style="background-image:url(img/russia.png)")
+                                    li.lang
+                                        a RU
+                                            i(style="background-image:url(img/russia.png)")
+
+
+
+
+
+
+
+
+

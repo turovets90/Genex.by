@@ -491,6 +491,9 @@ h3, .h3{
 
 .h_row_1{
   min-height: 45px;
+  @media (min-width:1200px){
+    height: 45px;
+  }
   .flex();
   .ai-center();
 
@@ -1768,11 +1771,19 @@ footer{
 
   .item{
     height: 180px;
-    .flex();
+    width: 100%;
+    @media (min-width:1200px){
+        min-width: 220px;
+    }
+    /*.flex();
     .ai-center();
-    .j-center();
+    .j-center();*/
+    position: relative;
     img{
+      position: absolute;
+      .m_a();
       max-height: 100%;
+      max-width: 100%;
     }
   }
 

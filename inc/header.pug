@@ -1,4 +1,4 @@
--var main_menu =['Главная ','О компании','Пассажирские перевозки','Грузовые перевозки','Таможенное оформление','Контакты'];
+-var main_menu =['Главная','О компании','Пассажирские перевозки','Грузовые перевозки','Таможенное оформление','Контакты'];
 
 header
     .container
@@ -7,7 +7,7 @@ header
                 .h_row_1_flex1
                     .logo_mobile
                         a(href="#")
-                            img(src="img/logo.png")
+                            img(src="img/logo.svg")
                     .lang_block
                         .lang.lang_active.ru(id="lang_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") RU
                             i(style="background-image:url(img/russia.png)")
@@ -53,7 +53,7 @@ header
                 .col-12.col-sm-12.col-md-2.col-xl-2
                     .logo_desktop
                         a(href="#")
-                            img(src="img/logo.png")
+                            img(src="img/logo.svg")
                 .col-12.col-sm-12.col-md-10.col-xl-10
                     .main_menu
                         ul.nav
@@ -62,7 +62,7 @@ header
                                     li.active
                                         a(href="" + menu_item + '.html')=menu_item
                                 else if index == 5
-                                    li.contact_link
+                                    li.contact_item
                                         a(href="" + menu_item + '.html')=menu_item
                                 else
                                     li

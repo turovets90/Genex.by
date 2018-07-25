@@ -1,0 +1,48 @@
+-var f_main_menu =['Главная ','О компании','Пассажирские перевозки','Грузовые перевозки','Таможенное оформление'];
+footer
+    .container
+        .row
+            .col-12.col-sm-12.col-md-12.col-xl-8.left_col
+                .row
+                    .col-12.col-sm-12.col-md-6.col-xl-5
+                        .logo
+                            a(href="#")
+                                img(src="img/logo.png")
+                        p Компания основана в 1997 году.
+                        p Самолётный парк составляют 2 самолёта Ан 26Б
+                        p Директор компании - Терещенко Евгений Станиславович.
+                    .col-12.col-sm-12.col-md-6.col-xl-7.pl-xl-80
+                        p.f_title Разделы
+                        ul.f_nav
+                            for menu_item,index in f_main_menu
+                                if index == 0
+                                    li.active
+                                        a(href="" + menu_item + '.html')=menu_item
+                                else
+                                    li
+                                        a(href="" + menu_item + '.html')=menu_item
+
+            .col-12.col-sm-12.col-md-12.col-xl-4.right_col
+                p.f_title Контактные данные
+                .location 220054 Национальный аэропорт Минск, г. Минск, <br>Республика Беларусь
+                div
+                    a.mail(href="mailto:info@genex.by") info@genex.by
+                .row.contacts
+                    .col-12.col-sm-6
+                        ul.contacts_list
+                            li
+                                a.tel(href="mailto:+375 172 35 45 01") +375 172 35 45 01 <span>(Т/ф)</span>
+                            li
+                                a.tel(href="mailto:+375 172 35 45 02") +375 172 35 45 02
+                    .col-12.col-sm-6
+                        a.contact_link(href="#") Контакты
+
+
+section.copyright
+    .container
+        .row
+            .col-12.col-sm-12.col-md-6.col-xl-6
+                p Copyright © 2014 Genex Ltd. All rights reserved. Developed by
+            .col-12.col-sm-12.col-md-6.col-xl-6
+                p.seologic
+                    a(href="#") Разработка сайта - Seologic

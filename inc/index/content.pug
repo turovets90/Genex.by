@@ -4,15 +4,15 @@ section.section_main_superslider
         -for(var i=1;i<=3;i++)
             .slider_item
                 .slider_item_bg(style="background-image:url(img/banner.png)")
-                    .container
-                        .slider_caption
-                            p.title Авиаперевозки #{i}
-                            p быстро и безопасно - к каждому нашему заказу мы относимся с полной долей внимания и аккуратностью
-                            .slider_btn_row
-                                a.more(href="#") Подробнее
-                                .slider_btn_group
-                                    button.slide_prev
-                                    button.slide_next
+                .container.slider_caption_absolute
+                    .slider_caption
+                        p.title Авиаперевозки #{i}
+                        p быстро и безопасно - к каждому нашему заказу мы относимся с полной долей внимания и аккуратностью
+                        .slider_btn_row
+                            a.more(href="#") Подробнее
+                            .slider_btn_group
+                                button.slide_prev
+                                button.slide_next
     .container.main_catalog_absolute
         .row.main_catalog
             -for(var i1 =0;i1<=2;i1++)

@@ -951,18 +951,24 @@ header{
       animation: kenBurns 15s ease alternate infinite;
       -webkit-animation: kenBurns 15s ease alternate infinite;
 
+      @media (max-width:1024px){
+        background-position: 85% -80px;
+      }
+
       @media (max-width:1200px){
         //height: 700px;
         //height: 1300px;
       }
       @media (max-width:991px){
         //height: 600px;
+        background-position: 79% -80px;
       }
       @media (max-width:767px){
         height: 400px;
       }
       @media (max-width:575px){
         height: 350px;
+        background-position: center;
       }
       &:before{
         .b_a();

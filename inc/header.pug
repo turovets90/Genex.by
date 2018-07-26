@@ -64,6 +64,14 @@ header
                                 else if index == 5
                                     li.contact_item
                                         a(href="" + menu_item + '.html')=menu_item
+                                else if index == 3
+                                    li
+                                        a(href="" + menu_item + '.html')=menu_item
+                                        ul.sub_menu
+                                            -for(var i=1;i<=4;i++)
+                                                li
+                                                    a(href="#") link
+
                                 else
                                     li
                                         a(href="" + menu_item + '.html')=menu_item

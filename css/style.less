@@ -773,6 +773,41 @@ header{
           margin-bottom:10px;
       }
 
+      position: relative;
+
+      &:hover{
+        @media (min-width:992px){
+          .sub_menu{
+            display: block;
+          }
+        }
+      }
+
+      .sub_menu{
+        @media (min-width:992px){
+          position: absolute;
+          padding: 15px 30px;
+          background: #003366;
+          min-width: 300px;
+          display: none;
+        }
+        padding-left: 20px;
+        li{
+          list-style: none;
+          margin-bottom: 5px;
+          a{
+
+            @media (min-width:992px){
+              color: #fff;&:hover{
+              color: @color_hover;
+            }
+            }
+
+          }
+        }
+      }
+
+
       &.active{
         a{
           color: @color_hover;
